@@ -98,7 +98,7 @@ WSGI_APPLICATION = 'authModuleCapacitaciones.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE'    : 'django.db.backends.postgresql_pyscopg2',
+        'ENGINE'    : 'django.db.backends.postgresql_psycopg2',
         'NAME'      : 'proyecto_capacitaciones',
         'USER'      : 'postgres',
         'PASSWORD'  : 'd4t4b4s3',
