@@ -72,6 +72,8 @@ REST_FRAMEWORK = {
     )
 }
 
+AUTH_USER_MODEL = 'AuthAppEmpleados.Usuario'
+
 ROOT_URLCONF = 'authModuleCapacitaciones.urls'
 
 TEMPLATES = [

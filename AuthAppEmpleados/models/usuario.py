@@ -22,12 +22,12 @@ class UserManager(BaseUserManager):
         return user
     
 
-class User(AbstractBaseUser, PermissionsMixin):
+class Usuario(AbstractBaseUser, PermissionsMixin):
     id = models.BigAutoField(primary_key=True)
-    username = models.CharField('username', max_length=20, unique=True)
+    username = models.CharField('username', max_length=30, unique=True)
     password = models.CharField('password', max_length= 256)
-    name = models.CharField('nombre', max_length=50)
-    email = models.EmailField('email', max_length=100)
+    name = models.CharField('nombre', max_length=30)
+    email = models.EmailField('email', max_length=30)
 
     def save(self, **kwargs):
         some_salt = 'eyJtZXNzYWdlIjoiSGVsbG8hIn0'
