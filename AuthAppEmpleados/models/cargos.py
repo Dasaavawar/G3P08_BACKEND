@@ -5,4 +5,3 @@ from django.db.models.fields import AutoField, CharField
 class Cargos(models.Model):
     idCargo = AutoField('id_cargo',primary_key=True)
     cargo = CharField('cargo', max_length=45)
-    nivelRiesgoId = CharField('nivel_riesgo_id', max_length=30)
