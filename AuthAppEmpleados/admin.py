@@ -1,13 +1,11 @@
-from django.contrib import admin
-from .models.usuario  import Usuario
-from .models.areaCapacitacion import AreaCapacitacion
-from .models.capacitacion import Capacitacion
-from .models.cargos import Cargos
-from .models.cargosCapacitacion import CargosCapacitacion
-from .models.trabajadores import Trabajadores
-from .models.registro import Registro
-
-
+from django.contrib                 import admin
+from .models.usuario                import Usuario
+from .models.areaCapacitacion       import AreaCapacitacion
+from .models.capacitacion           import Capacitacion
+from .models.cargos                 import Cargos
+from .models.cargosCapacitacion     import CargosCapacitacion
+from .models.trabajadores           import Trabajadores
+from .models.registro               import Registro
 
 admin.site.register(Usuario)
 admin.site.register(AreaCapacitacion)
